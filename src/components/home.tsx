@@ -8,22 +8,22 @@ export default function Home() {
   return (
     <div className="bg-white border-2 rounded-lg">
       <div className="flex flex-col items-center justify-center p-8">
-        <h1 className="text-4xl font-medium mb-4">$UPTOBER</h1>
-        <p className="text-md text-center mb-4">
+        <h1 className="text-[42px] sm:text-4xl font-medium p-2">$UPTOBER</h1>
+        <p className="text-center text-[9.3px] md:text-sm mb-4">
           Historically, October goes up. This time, for Radix - and a touch of
           meme-driven insanity.
         </p>
-        <p className="text-md text-center break-all">
+        <p className="text-center text-[9.3px] md:text-sm break-all">
           Resource Address:
           resource_rdx1tku8vlsav6cs0wj3h7nzp3kfvf0qmw5u529xyfvutr5lcx9l8g3hfg
         </p>
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="flex justify-center gap-0 md:gap-6">
           {images.map((src, index) => (
             <img
               key={index}
               src={src}
               alt={`Random ${index}`}
-              className="w-full max-w-[200px] h-auto rounded-lg shadow-md object-cover"
+              className="w-[75px] sm:w-[168px] h-auto object-cover"
             />
           ))}
         </div>

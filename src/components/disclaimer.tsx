@@ -1,9 +1,9 @@
 export default function Disclaimer() {
   return (
-    <div className="bg-white border-2 rounded-lg">
+    <div className="bg-red-200 border-red-500 border-2 rounded-lg">
       <div className="flex flex-col items-center justify-center p-8">
-        <h1 className="text-4xl font-medium ">⚠️ IMPORTANT DISCLAIMER ⚠️</h1>
-        <div className="text-center text-lg mt-4 space-y-4">
+        <h1 className="text-[14px] md:text-2xl font-medium">⚠️ IMPORTANT DISCLAIMER ⚠️</h1>
+        <div className="text-center text-[9.3px] md:text-sm mt-4 space-y-4">
           <p>
             Let’s keep it real - $UPTOBER is not a security, investment, or
             financial advice. It’s a meme token, born to make Radix a little

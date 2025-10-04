@@ -14,10 +14,13 @@ export default function Header() {
             About
           </Button>
           <Button variant="default" href="#projects">
-            Projects
+            Comic
           </Button>
           <Button variant="default" href="#contact">
-            Contact
+            Incentives
+          </Button>
+          <Button variant="default" href="#contact">
+            Buy
           </Button>
         </div>
       </div>
