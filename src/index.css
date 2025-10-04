@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Sometype Mono", monospace;
+  scroll-behavior: smooth;
+}
+
+.rain-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #fe0000; /* red background */
+}
+
+.candle {
+  position: absolute;
+  width: 40px;
+  height: 120px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='120'><rect x='10' y='20' width='20' height='80' rx='2' fill='%233dd832'/><rect x='19' y='0' width='2' height='120' fill='%233dd832'/></svg>");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
