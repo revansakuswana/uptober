@@ -3,7 +3,7 @@ import Header from "@/components/header";
 import Home from "@/components/home";
 import Divider from "@/components/divider";
 import UptoberisHere from "@/components/uptober-is-here";
-import VideoPlayer from "@/components/video-player";
+// import VideoPlayer from "@/components/video-player";
 import UptoberSocial from "@/components/uptober-social";
 import Webcomic from "@/components/webcomic";
 import Community from "@/components/community";
@@ -24,8 +24,8 @@ function App() {
           <main>
             <Home />
             <Divider />
-            <VideoPlayer />
-            <Divider />
+            {/* <VideoPlayer /> */}
+            {/* <Divider /> */}
             <UptoberisHere />
             <Divider />
             <UptoberSocial />
