@@ -17,7 +17,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: #f9f9f9; /* background merah */
+  background: #000000; /* background merah */
   z-index: -1; /* dorong ke belakang */
 }
 

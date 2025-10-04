@@ -27,7 +27,7 @@ function App() {
             <VideoPlayer />
             <Divider />
             <UptoberisHere />
-            <div className="h-8"></div>
+            <Divider />
             <UptoberSocial />
             <Divider />
             <Webcomic />

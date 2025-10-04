@@ -8,8 +8,8 @@ export default function Webcomic() {
   return (
     <div className="bg-white border-2 rounded-lg">
       <div className="flex flex-col items-center justify-center p-8">
-        <h1 className="text-4xl font-bold mb-4">
-          Read the 'UPTOBER vs Bear Demons' on webcomic
+        <h1 className="text-4xl font-medium mb-4">
+          Read the ‘UPTOBER vs Bear Demons’
         </h1>
         <p className="mb-6">Learn about the backstory of UPTOBER!</p>
 
