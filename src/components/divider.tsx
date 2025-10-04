@@ -1,5 +1,7 @@
 export default function Divider() {
   return (
-    <section className="sticky h-24 w-full border-x border-y bg-line-repeat"></section>
+    <div className="flex items-center justify-center">
+      <div className="h-12 w-[3px] bg-black rounded-none"></div>
+    </div>
   );
 }
