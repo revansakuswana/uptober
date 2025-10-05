@@ -6,13 +6,13 @@ export default function VideoPlayer() {
   const videos = [video1, video2, video3];
   return (
     <div id="content" className="bg-white border-2 rounded-lg p-8">
-      <div className="flex flex-wrap justify-center items-center gap-6 w-full max-w-full overflow-hidden">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-6 w-full max-w-full overflow-hidden">
         {videos.map((src, index) => (
           <video
             key={index}
             src={src}
             controls
-            className="w-[250px] sm:w-[180px] md:w-[280px] object-cover sm:w-"
+            className="w-[250px] sm:w-[180px] md:w-[250px] lg:w-[280px] object-cover sm:w-"
           />
         ))}
       </div>
