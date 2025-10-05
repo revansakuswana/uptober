@@ -9,6 +9,7 @@ import Community from "@/components/community";
 import Disclaimer from "@/components/disclaimer";
 import HowtoBuy from "@/components/how-to-buy";
 import Loading from "@/components/ui/loading";
+import VideoPlayer from "@/components/video-player";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,6 +34,8 @@ function App() {
           className="relative z-10 min-h-screen mx-auto w-[67rem] max-w-full px-12 py-12">
           <main>
             <Home />
+            <Divider />
+            <VideoPlayer />
             <Divider />
             <UptoberisHere />
             <Divider />
