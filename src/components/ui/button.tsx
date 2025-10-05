@@ -7,10 +7,11 @@ interface ButtonProps {
 }
 
 const baseStyles =
-  "w-80 md:w-32 text-center px-4 py-2 rounded-lg border-2 transition-colors transition-transform duration-300 ease-in-out font-bold";
+  "w-80 sm:w-28 md:w-34 text-sm sm:text-sm md:text-lg text-center px-4 py-2 rounded-lg border-2 transition-colors transition-transform duration-300 ease-in-out font-bold";
 
 const variants = {
-  default: "bg-white text-black border-black hover:bg-orange-300 transform hover:scale-105",
+  default:
+    "bg-white text-black border-black hover:bg-orange-300 transform hover:scale-105",
   primary: "bg-black text-white border-black hover:bg-white",
 };
 

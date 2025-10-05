@@ -10,6 +10,7 @@ import Disclaimer from "@/components/disclaimer";
 import HowtoBuy from "@/components/how-to-buy";
 import Loading from "@/components/ui/loading";
 import VideoPlayer from "@/components/video-player";
+import TitleVideo from "@/components/title-video";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -35,6 +36,8 @@ function App() {
           <main>
             <Home />
             <Divider />
+            <TitleVideo />
+            <div className="h-4"></div>
             <VideoPlayer />
             <Divider />
             <UptoberisHere />

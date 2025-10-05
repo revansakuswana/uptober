@@ -5,21 +5,16 @@ import video3 from "@/assets/Video 3.mp4";
 export default function VideoPlayer() {
   const videos = [video1, video2, video3];
   return (
-    <div className="bg-white border-2 rounded-lg ">
-      <div className="flex flex-col items-center justify-center p-8">
-        <h1 className="text-[42px] sm:text-4xl font-medium p-2">
-          Funniest UPTOBER Moments
-        </h1>
-        <div className="flex flex-wrap justify-center items-center gap-6 w-full max-w-full overflow-hidden">
-          {videos.map((src, index) => (
-            <video
-              key={index}
-              src={src}
-              controls
-              className="w-[250px] sm:w-[180px] md:w-[280px] object-cover"
-            />
-          ))}
-        </div>
+    <div id="content" className="bg-white border-2 rounded-lg p-8">
+      <div className="flex flex-wrap justify-center items-center gap-6 w-full max-w-full overflow-hidden">
+        {videos.map((src, index) => (
+          <video
+            key={index}
+            src={src}
+            controls
+            className="w-[250px] sm:w-[180px] md:w-[280px] object-cover sm:w-"
+          />
+        ))}
       </div>
     </div>
   );
