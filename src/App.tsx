@@ -1,19 +1,29 @@
-import CandleRain from "@/components/candle-rain";
+import { useState, useEffect } from "react";
 import Header from "@/components/header";
 import Home from "@/components/home";
 import Divider from "@/components/divider";
 import UptoberisHere from "@/components/uptober-is-here";
-// import VideoPlayer from "@/components/video-player";
 import UptoberSocial from "@/components/uptober-social";
 import Webcomic from "@/components/webcomic";
 import Community from "@/components/community";
 import Disclaimer from "@/components/disclaimer";
 import HowtoBuy from "@/components/how-to-buy";
+import Loading from "@/components/ui/loading";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 1500); // durasi 2 detik
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
-    <div className="relative">
-      <CandleRain count={50} />
+    <div className="bg-brick">
       <div
         id="site-main"
         className="flex flex-col items-center justify-center max-w-full relative text-center z-10 transition-opacity duration-700 ease-in-out">
@@ -24,8 +34,6 @@ function App() {
           <main>
             <Home />
             <Divider />
-            {/* <VideoPlayer /> */}
-            {/* <Divider /> */}
             <UptoberisHere />
             <Divider />
             <UptoberSocial />
@@ -43,4 +51,5 @@ function App() {
     </div>
   );
 }
+
 export default App;

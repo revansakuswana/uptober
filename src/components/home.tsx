@@ -6,7 +6,7 @@ import green from "@/assets/green.jpg";
 export default function Home() {
   const images = [red, yellow, blue, green];
   return (
-    <div className="bg-white border-2 rounded-lg">
+    <div id="home" className="bg-white border-2 rounded-lg">
       <div className="flex flex-col items-center justify-center p-8">
         <h1 className="text-[42px] sm:text-4xl font-medium p-2">$UPTOBER</h1>
         <p className="text-center text-[9.3px] md:text-sm mb-4">
@@ -15,7 +15,9 @@ export default function Home() {
         </p>
         <p className="text-center text-[9.3px] md:text-sm break-all">
           Resource Address:
-          resource_rdx1tku8vlsav6cs0wj3h7nzp3kfvf0qmw5u529xyfvutr5lcx9l8g3hfg
+          <span className="text-red-500">
+            resource_rdx1tku8vlsav6cs0wj3h7nzp3kfvf0qmw5u529xyfvutr5lcx9l8g3hfg
+          </span>
         </p>
         <div className="flex justify-center gap-0 md:gap-6">
           {images.map((src, index) => (

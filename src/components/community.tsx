@@ -1,13 +1,13 @@
 export default function Community() {
   return (
-    <div className="bg-white border-2 rounded-lg">
+    <div id="incentives" className="bg-white border-2 rounded-lg">
       <div className="flex flex-col items-center justify-center p-8">
         <h1 className="text-[42px] sm:text-4xl font-medium p-2">
           Community Incentives
         </h1>
         <div>
           <p className="text-center my-2 text-[9.3px] md:text-sm">
-            🎁Incentives Community🎁
+            🎁Community Incentives🎁
           </p>
           <p className="text-left my-2 text-[9.3px] md:text-sm">
             The first 15% of the total $UPTOBER supply is dedicated entirely to

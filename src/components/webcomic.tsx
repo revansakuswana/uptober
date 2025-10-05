@@ -8,7 +8,7 @@ export default function Webcomic() {
   const images = [comic1, comic2, comic3, comic4, comic5];
 
   return (
-    <div className="bg-white border-2 rounded-lg">
+    <div id="comic" className="bg-white border-2 rounded-lg">
       <div className="flex flex-col items-center justify-center p-8">
         <h1 className="text-[42px] sm:text-4xl font-medium p-2">
           Read the ‘UPTOBER vs Bear Demons’
