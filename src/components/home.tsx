@@ -25,7 +25,7 @@ export default function Home() {
               key={index}
               src={src}
               alt={`Random ${index}`}
-              className="w-[75px] sm:w-[168px] h-auto object-cover"
+              className="w-[65px] sm:w-[168px] h-auto object-cover"
             />
           ))}
         </div>

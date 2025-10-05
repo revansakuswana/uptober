@@ -7,7 +7,7 @@ export default function Community() {
         </h1>
         <div>
           <p className="text-center my-2 text-[9.3px] md:text-sm">
-            🎁Community Incentives🎁
+            🎁 Community Incentives 🎁
           </p>
           <p className="text-left my-2 text-[9.3px] md:text-sm">
             The first 15% of the total $UPTOBER supply is dedicated entirely to

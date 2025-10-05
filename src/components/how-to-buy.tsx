@@ -15,7 +15,7 @@ export default function HowtoBuy() {
             margin: "0 auto",
             display: "block",
             maxWidth: 960,
-            minWidth: 260,
+            minWidth: 200,
             colorScheme: "normal",
           }}
           scrolling="no"
